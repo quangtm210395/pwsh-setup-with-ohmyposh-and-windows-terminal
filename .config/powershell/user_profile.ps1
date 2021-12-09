@@ -15,6 +15,9 @@ Set-PSReadLineOption -PredictionSource History
 Import-Module PSFzf
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
+# set default themes
+Set-PoshPrompt rainbow
+
 # Env
 $env:GIT_SSH = "C:\Windows\system32\OpenSSH\ssh.exe"
 
